@@ -25,11 +25,18 @@
 .sidebar {
   background-color: var(--color-grey-dark-1);
   flex: 0 0 18%; // don't want it to grow, shrink, and want base to be 18% (so it will still shrink since percentage)
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
   background-color: #fff;
+
+  // TEST
   background-color: orangered;
+  height: 80rem;
 
   flex: 1; // this will make element grow as much as it can in the main axis
 }
