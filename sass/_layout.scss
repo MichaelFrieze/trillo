@@ -1,20 +1,30 @@
 .container {
   max-width: 120rem;
   margin: 8rem auto;
-  background-color: var(--color-grey-light-2);
+  background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
 
   min-height: 50rem;
 }
 
 .header {
+  height: 7rem; // 70px | 1rem = 10px
+  background-color: #fff;
+  border-bottom: var(--color-grey-light-2);
 }
 
 .content {
+  display: flex;
 }
 
 .sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%; // don't want it to grow, shrink, and want base to be 18% (so it will still shrink since percentage)
 }
 
 .hotel-view {
+  background-color: #fff;
+  background-color: orangered;
+
+  flex: 1; // this will make element grow as much as it can in the main axis
 }
